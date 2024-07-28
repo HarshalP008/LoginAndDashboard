@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="row vh-100">
+    <div class="col-sm-8 side-img d-flex justify-content-center align-items-end">
+      <img src="../../assets/Buildings.jpg" alt="buildings" class="login-img">
+      <div class="image-dia pb-5 ps-5" style="width:100%;">
+        <h3><b>Welcome </b><span>Back,</span></h3>
+        <p class="welcome-dia mt-3">We're thrilled to have you here. Whether you're a returning customer or it's your first time shopping with us, we're dedicated to making your experience seamless and enjoyable. As you log in, get ready to explore our wide range of products, from the latest trends to everyday essentials. Plus, enjoy personalized recommendations tailored just for you.</p>
+      </div>
+    </div>
+    <div *ngIf="!isForgotPassword" class="col-sm-4 ps-5">
+      <form class="p-4" [formGroup]="myLoginForm" (ngSubmit)="submit()">
+        <h6 class="logo mb-5"><b>TECH</b>LOGO</h6>
+        <h4 class="pb-md-4 mt-3 form-heading"><b>Log in</b></h4>
+        <div class="form-outline mb-4">
+          <div class="user-input">
+            <i class="far fa-envelope form-icon mx-2"></i>
+            <label for="email" class="input-label">Email</label>
+            <input type="text" id="email" class="form-control" formControlName="email" placeholder="Enter email">
+            <small *ngIf="!myLoginForm.get('email').valid && myLoginForm.get('email').touched" class="form-text text-danger">
+              <span *ngIf="myLoginForm.get('email')?.errors?.['required']">Email is required!</span>
+              <span *ngIf="myLoginForm.get('email')?.errors?.['minlength']">Minimun 5 chars required</span>
+            </small>
+          </div>
+        </div>
+        <div class="form-outline mb-2">
+          <div class="user-input">
+            <i class="fa fa-lock form-icon mx-2"></i>
+            <label for="Password" class="input-label">Password</label>
+            <input type="password" id="loginPassword" class="form-control" formControlName="password" placeholder="Enter password">
+          </div>
+        </div>
+        <div class="d-flex justify-content-between px-sm-1 mb-4">
+          <p *ngIf="!isRememberMe" role="button" class="" (click)="rememberMe()"><i
+              Class='far fa-circle me-2'></i><small>Remember me</small></p>
+          <p *ngIf="isRememberMe" role="button" class="" (click)="rememberMe()"><i
+              Class='far fa-check-circle me-2'></i><small>Remember me</small></p>
+          <p role="button" class="" (click)="forgotPassword()"><small>Forgot password</small></p>
+        </div>
+        <button type="submit" class="btn mb-2 col-12 log-btn text-light"><b>Login now</b></button>
+      </form>
+    </div>
+    <div *ngIf="isForgotPassword" class="col-lg-4 ps-5">
+      <form class="p-4" (ngSubmit)="submitRegiEmail()">
+        <h6 class="logo mb-5"><b>TECH</b>LOGO</h6>
+        <h4 class="pb-md-4 mt-3 form-heading"><b>Forgot Password</b></h4>
+        <p class="forgetPass-dia">Please enter the email address you used to register, we'll send you a link to reset your password.</p>
+        <div class="form-outline my-5 pb-4">
+          <div class="user-input">
+            <label for="regiEmail" class="input-label">Registered email</label>
+            <input type="password" id="regiEmail" class="form-control" formControlName="regiEmail" placeholder="Enter registered email">
+          </div>
+        </div>
+        <button type="submit" class="btn mb-4 mt-5 col-12 sub-password-btn text-light"><b>Send code</b></button>
+      </form>
+    </div>
+  </div>
+</div>

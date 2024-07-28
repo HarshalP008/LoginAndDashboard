@@ -1,0 +1,41 @@
+.navbar{
+    padding:2px 20px;
+    height:100px;
+    background: #142A4A;
+  }
+
+  .navbar-nav{
+    margin-left: 30px;
+  }
+  
+  .navbar-nav .nav-item{
+    margin-left:20px;
+  }
+
+  .create-acc-btn{
+    background-color: #FFFFFF1A;
+    color: #fff;
+  }
+  
+  .search-hover {
+    border: 1px solid #ccc;
+    outline: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    transition: all 0.5s;
+    padding-left: 28px;
+    background-color: #FFFFFF1A;
+    color:#fff;
+  }
+  
+  .search-hover:hover {
+    width: 200px;
+    padding-left: 30px;
+  }
+  
+  .search-icon{
+    position: relative;
+    left:24px;
+  }
+  

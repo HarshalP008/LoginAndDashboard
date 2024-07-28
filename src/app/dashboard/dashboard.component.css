@@ -1,0 +1,117 @@
+.img-container {
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.img-container>img {
+  width: 100%;
+}
+
+.empower-buisness .img-container>img {
+  border-bottom-left-radius: 70px;
+  border-top-left-radius: 70px;
+}
+
+.create-acc-btn,.learn-more-btn {
+  background-color: #FFFFFF1A;
+  color: #fff;
+}
+
+.team-learn-btn{
+  background-color: #F8F8F81A;
+  color: #fff;
+}
+
+.view-all-btn{
+  background-color: #FF5757;
+  color: #fff;
+}
+
+.empower-buisness {
+  background-color: #142A4A;
+  padding-top: 60px;
+  padding-bottom:100px;
+  margin-bottom:50px;
+}
+
+.become-seller{
+  padding-left:50px;
+  margin:50px 0;
+  padding-bottom: 60px;
+}
+
+.finance-offers, .start-journey{
+  margin:50px 0;
+  padding-bottom: 60px;
+}
+
+.choose-trexo-section{
+  margin:50px 0;
+}
+
+.empower-buisness-dia, .become-seller-dia, .finance-offer-dia{
+  padding-left: 50px;
+  padding-top: 50px;
+  text-align: left;
+}
+
+.empower-buisness-dia h1 {
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+.choose-trexo h2{
+  font-weight: 600;
+}
+
+.empower-buisness-dia h1:first-child {
+  font-weight: 400;
+}
+
+.empower-buisness-dia p {
+  font-size: 15px;
+  width: 560px;
+  margin-top: 50px;
+  line-height: 25px;
+}
+
+.become-seller-dia-section{
+  background-color:#F8F8F8;
+}
+
+.become-seller p, .finance-offers p, .choose-trexo p{
+  line-height: 25px;
+  font-size:15px;
+  font-weight: 600;
+}
+
+.choose-trexo-options{
+  font-weight:600;
+  font-size:20px;
+}
+
+.choose-trexo-options:not(:last-child){
+  padding-right:60px;
+  border-right:2px solid #9d9d9d;
+}
+
+.finance-offers{
+  border-radius: 40px;
+  background-image: url("../../assets/teamwork.png");
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
+.start-journey{
+  border-radius: 40px;
+  background-image: url("../../assets/man-talking.png");
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
+.start-journey-btn{
+  color:#33507C;
+  font-weight:800;
+}

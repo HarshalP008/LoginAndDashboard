@@ -1,0 +1,96 @@
+.side-img{
+    align-items: center;
+    object-fit: cover;
+    overflow:hidden;
+    position: relative;
+}
+
+.login-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.image-dia {
+    position: relative;
+    color: #fff;
+}
+
+.user-input {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    color: #808080;
+}
+
+.input-field {
+    padding-left: 44px;
+}
+
+.form-icon{
+    color: #F13E3E;
+}
+
+.log-btn,.sub-password-btn {
+    background: linear-gradient(95deg, #112F5D 0%, #192537 100%) 0% 0% no-repeat;
+}
+
+.welcome-dia, .forgetPass-dia{
+    font-size:14px;
+}
+
+.forgetPass-dia{
+    font-weight: 600;
+}
+
+.input-label{
+    margin-bottom:7px;
+    font-weight: 600;
+}
+
+.form-heading{
+    position:relative;
+}
+
+.form-heading::after{
+    position:absolute;
+    content:"";
+    height:2px;
+    width:12%;
+    background: #F13E3E;
+    left:0;
+    top:70%;
+    z-index:-1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
